@@ -19,7 +19,7 @@ export default function BuyersVideoSection() {
 
   return (
     <div className="pt-32 container">
-      <div className="bg-primary lg:px-20 md:px-8 px-1 flex justify-between lg:flex-row flex-col items-start lg:py-28 py-16">
+      <div className="bg-primary rounded-[5px] lg:px-20 md:px-8 px-1 flex justify-between lg:flex-row flex-col items-start lg:py-28 py-16">
         <div
           data-aos="zoom-in"
           className="md:w-[600px] w-full lg:mb-0 mb-10 h-[320px] rounded-[5px]"
