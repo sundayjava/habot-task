@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from '../../assets/logo.png'
 
 export default function Navbar() {
   //Starting with a start to handle the custom hamburger icon created with p tag
@@ -11,7 +12,7 @@ export default function Navbar() {
         <div className="relative w-[181px] cursor-pointer">
           <img
             loading="lazy"
-            src="https://s3-alpha-sig.figma.com/img/c1e1/45c4/467f6c3f60c323a607803f6d0dbc78cd?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jbJt0E4pFNRRC5t0VVej3mwlNr9TGwDDxie~enSZiV4lUB247N6CCUgijC3f0NYFSqHa-oJZNL9C3tKgVB1qPah6snDLHh5BnLlekPTwk7nV1JTOgpi8KQBAbF9GsZf7P8i7YYAxHVkFQXOl8Y7XU~GJygBnKWe-04TUaZ6ZmxVuOkYQDsRBfVLyOhdrGhxi7hWVeteGgRo5TXR9kdkVOqfwYB7dI0o5rjPhOKf2MSVNWK60kwtFNc9O-Gkh-tVXwByg2C8g5KXrKeVwe59LLfBo9-otVk4Cu1tFgRSFy4wNPdFJU7ZzoEfCPTW023S-9E620NYYVs5NjQgPiR1G5Q__"
+            src={logo}
             className="object-contain object-top"
           />
         </div>

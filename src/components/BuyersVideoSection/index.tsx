@@ -25,17 +25,17 @@ export default function BuyersVideoSection() {
           className="md:w-[600px] w-full lg:mb-0 mb-10 h-[320px] rounded-[5px]"
         >
           {/*Addin youtube video the represent the hardcoded image and the youTube icon in the design*/}
-          <iframe
+         <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/tFBPPEWBBPA"
-            title="MATALINO | Pinoy Animation"
+            src="https://www.youtube.com/embed/IZLp-TZyDkQ"
+            title="HABOT"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
         </div>
 
-         {/*Setting some state to switch between the Buyer button and the Supplier button*/}
+        {/*Setting some state to switch between the Buyer button and the Supplier button*/}
         <div className="lg:w-[40%] md:w-[75%] w-full md:mt-8">
           <div className="flex justify-between">
             <button
@@ -62,7 +62,7 @@ export default function BuyersVideoSection() {
             </button>
           </div>
 
-           {/*Redering the data based on the active button*/}
+          {/*Redering the data based on the active button*/}
           {active === 1 ? (
             <ul className="mt-7">
               {buyerContent.map((items, i) => (

@@ -1,5 +1,6 @@
 import { BsBriefcaseFill } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
+import bg from "../../assets/bg.png"
 
 //How i was able to acheive the hero section with the floating text. check line by line
 
@@ -9,7 +10,7 @@ export default function HeroSection() {
     <div className="shadowed-bg h-[609px] w-full relative">
        {/*The image that act as the background for this section*/}
       <img
-        src="https://s3-alpha-sig.figma.com/img/4df9/f396/c8b4ef806609efd227c6672c5dba3716?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YB0wTaluFGXQDGTRKt46yiPjiMdT~6szdoCQPxP-XYNIN0Ub7eKw60srQD6zCeBLh-crvhj3SptYztTaQOXfD~oT9Wt4LRVHJG09FjhsBrl0pkCY628utGxz6m5w~ZfCjLNBaeAvdvoJqfKYaiaHA775l~DthhFfbhQ3x7Ei9K7N8ria0BGMuIPwC9IIOcNx7Sc0UQc8xqCD7CryX6kLmooF2WB63vOJcFLUs8jA~fvGE3FaV8JkfTGH12~A8Dd5d2CaeU~~CxyA3VYI8RvgYORB-yQRIrqSjr3LwYKPOQYcIWpln-FP25tTo6pywJ9Xhy9vIjfQ9eiWdKn36ukLaQ__"
+        src={bg}
         alt="bgimge"
         className="w-full h-full object-top object-cover"
       />
