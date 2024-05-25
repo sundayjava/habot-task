@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .shadowed-bg{
+  background: url("/src/assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position-y: top
+} */
+
+/* Navbar hamburger */
+.harmburger-open {
+  @apply flex flex-col gap-[5px] justify-center items-center;
+}
+
+.harmburger-open p {
+  @apply w-6 h-[2px] dark:bg-white bg-gray-800 rotate-0 relative origin-center transition-all ease-out duration-300;
+}
+
+.harmburger-close {
+  @apply gap-2;
+}
+
+.harmburger-close p {
+  @apply absolute;
+}
+
+.harmburger-close p:first-child {
+  @apply rotate-[135deg];
+}
+
+.harmburger-close p:nth-child(2) {
+  @apply w-0 h-0;
+}
+
+.harmburger-close p:last-child {
+  @apply -rotate-[135deg];
+}
+/*Ends here*/
+
+.hover-border {
+  position: relative;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.hover-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #eb7150;
+  transition: width 0.3s ease;
+}
+
+.hover-border:hover::after {
+  width: 100%;
+}
+
+.odd-bg-color:nth-child(odd) {
+  background-color: #e8fbff;
+  font-size: 20px !important;
+  padding: 0 96px;
+}
+
+.odd-bg-color:nth-child(even) {
+  font-size: 18px !important;
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .odd-bg-color:nth-child(odd) {
+    font-size: 19px !important;
+    padding: 0 76px;
+  }
+
+  .odd-bg-color:nth-child(even) {
+    font-size: 17px !important;
+    padding: 0 60px;
+  }
+}
