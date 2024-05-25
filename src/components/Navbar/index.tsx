@@ -1,11 +1,13 @@
 import { useState } from "react";
 
 export default function Navbar() {
+  //Starting with a start to handle the custom hamburger icon created with p tag
   const [toggle, setToggle] = useState(false);
 
   return (
     <div className="w-full">
       <div className="container h-[86px] flex justify-between items-center">
+        {/*Project logo*/}
         <div className="relative w-[181px] cursor-pointer">
           <img
             loading="lazy"
@@ -13,6 +15,7 @@ export default function Navbar() {
             className="object-contain object-top"
           />
         </div>
+        {/* Other navigation content and responsive content to hide the button and paragraph for screen breakpoint */}
         <div className="md:flex items-center gap-7 font-[400] leading-6 hidden">
           <span className="cursor-pointer text-[15.25px] hover-border hover:text-primary">
             Find Suppliers
@@ -26,7 +29,9 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/*For mobile device only*/}
         <div className="md:hidden flex flex-1 justify-end items-start">
+           {/*Custom hamburger icon*/}
           <div
             onClick={() => setToggle((prev) => !prev)}
             className={`harmburger-open ${

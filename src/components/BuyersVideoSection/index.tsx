@@ -10,6 +10,7 @@ export default function BuyersVideoSection() {
     "Choose among the suppliers based on the ratings and reviews.",
   ];
 
+  //Making some changes to the buyercontent Data to effect the animation
   const supplierContent = [
     "Sit back for multiple suppliers to contact you.",
     "Post your requirements.",
@@ -23,6 +24,7 @@ export default function BuyersVideoSection() {
           data-aos="zoom-in"
           className="md:w-[600px] w-full lg:mb-0 mb-10 h-[320px] rounded-[5px]"
         >
+          {/*Addin youtube video the represent the hardcoded image and the youTube icon in the design*/}
           <iframe
             width="100%"
             height="100%"
@@ -32,6 +34,8 @@ export default function BuyersVideoSection() {
             allowFullScreen
           ></iframe>
         </div>
+
+         {/*Setting some state to switch between the Buyer button and the Supplier button*/}
         <div className="lg:w-[40%] md:w-[75%] w-full md:mt-8">
           <div className="flex justify-between">
             <button
@@ -57,6 +61,8 @@ export default function BuyersVideoSection() {
               Supplier
             </button>
           </div>
+
+           {/*Redering the data based on the active button*/}
           {active === 1 ? (
             <ul className="mt-7">
               {buyerContent.map((items, i) => (
